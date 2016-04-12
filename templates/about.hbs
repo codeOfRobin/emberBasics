@@ -1,0 +1,16 @@
+<h1>about me</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<button class="btn btn-primary" {{action 'showRealName'}}> Real Name dikha</button>
+
+
+{{#if isPictureShowing}}
+<p>
+    <img src="http://static2.wikia.nocookie.net/__cb20110619131712/muppet/images/2/28/Count_Kneeling.png"/>
+</p>
+<button class="btn btn-primary" {{action 'hidePicture'}}>Photu hata be</button>
+{{else}}
+<button class="btn btn-primary" {{action 'showPicture'}}>Photu dikha</button>
+{{/if}}
