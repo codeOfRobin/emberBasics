@@ -1,4 +1,4 @@
-<h1>{{title}}</h1>
+8<h1>{{title}}</h1>
 
 {{#if isEditing}}
     <form>
@@ -16,5 +16,19 @@
     <p>
         {{body}}
         <button class= "btn btn-primary" {{action 'edit'}}>Edit</button>
+        <button class= "btn btn-primary" {{action 'delete'}}>Delete</button>
     </p>
 {{/if}}
+
+<h2>Comments</h2>
+{{#each comments}}
+    <p>
+        {{text}}
+    </p>
+{{/each}}
+
+<p>
+    {{#link-to 'new-comment' this.id class}}{{/link-to}}
+</p>
+
+{{outlet}}
